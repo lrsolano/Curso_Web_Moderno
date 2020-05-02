@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leonardo Ribeiro",
+      "email": "leonardo@lrsolano.com"
+    },
+    {
+      "id": 2,
+      "name": "Lucas Gabriel",
+      "email": "lucas@lrsolano.com"
+    },
+    {
+      "name": "Ariberto Solano",
+      "email": "aribeirosolano@yahoo.com.br",
+      "id": 3
+    }
+  ]
+}
