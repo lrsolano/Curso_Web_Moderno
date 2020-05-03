@@ -1,6 +1,6 @@
 const schedule = require('node-schedule')
 module.exports = app => {
-    schedule.scheduleJob('* 1 * * *', async function(){
+    schedule.scheduleJob("*/10 * * * *", async function(){
         const usersCount = await app.db('users').count('id as count').first()
         const categoriesCount = await app.db('categories').count('id as count').first()
         const articlesCount = await app.db('articles').count('id as count').first()
@@ -11,7 +11,6 @@ module.exports = app => {
         const changeUsers = usersCount.count !== results.users
         const changeCategories = categoriesCount.count !== results.categories
         const changeArticles = articlesCount.count !== results.articles
-
         if(changeUsers){
             app.db('stat').update({value:usersCount.count})
                 .where({name: 'users'})

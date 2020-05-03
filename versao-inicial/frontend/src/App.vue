@@ -23,6 +23,12 @@ export default {
 </script>
 
 <style>
+	html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	}
 	* {
 		font-family: "Lato", sans-serif;
 
@@ -30,12 +36,13 @@ export default {
 
 	body{
 		margin: 0;
+
 	}
 
 	#app {
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-
+		min-height: 100vh;
 		height: 100vh;
 		display: grid;
 		grid-template-rows: 60px 1fr 40px;
@@ -44,7 +51,10 @@ export default {
 	}
 
 	#app.hide-menu{
-		grid-template-areas: "header header" "content content" "footer footer";
+		height: 100%;
+		grid-template-columns: 1fr;
+		grid-template-areas: "header" "content" "footer";
+
 	}
 
 </style>
