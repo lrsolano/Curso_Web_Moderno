@@ -45,7 +45,7 @@ module.exports = app => {
             res.status(500).send(msg)
         }
     }
-    const limit = 10
+    const limit = 3
     const get = async (req, res) => {
         const page = req.query.page || 1 
 
