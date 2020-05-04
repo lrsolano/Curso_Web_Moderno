@@ -9,12 +9,14 @@ import './config/msg'
 import $ from 'jquery'
 import store from './config/store'
 import router from './config/router'
+import './config/axios'
+import './config/mq'
 
 
 Vue.config.productionTip = false
 
 //TEMPORARIO!!!!!!!!!
-require('axios').defaults.headers.common['Authorization'] = 'bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6Ikxlb25hcmRvIiwiZW1haWwiOiJsZW9uYXJkb0BscnNvbGFuby5jb20iLCJhZG1pbiI6MSwiaWF0IjoxNTg4NDMyNDMxLCJleHAiOjE1ODg2OTE2MzF9.TTZPdkm7olUlQUmSUhfvtUPHEtKtFfjpDTjBsCK-WQU'
+
 
 new Vue({
   $,

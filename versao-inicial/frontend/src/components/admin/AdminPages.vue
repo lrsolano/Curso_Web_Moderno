@@ -34,9 +34,21 @@ export default {
 
 <style>
     .tabs{
-        background-color: rgba(183, 122, 233, 0.3);
+        background-color: rgba(183, 122, 233, 0.2);
         
     }
+    .card-header{
+        background-color: rgba(183, 122, 233, 0.4);
+    }
+    .nav-tabs .nav-link.active{
+         background-color: rgba(183, 122, 233, 0.6) !important;
+         outline: 0;
+         color: #000;
+    }
+    .nav-link{
+        color: #000;
+    }
+
 
     
 </style>

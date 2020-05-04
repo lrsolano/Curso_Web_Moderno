@@ -40,4 +40,8 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    .home{
+        height: 100%;
+        width: 100%;
+    }
 </style>
